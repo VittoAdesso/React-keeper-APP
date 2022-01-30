@@ -1,17 +1,17 @@
 import NavBar from './components/NavBar/NavBar'; 
+import theme from './theme/theme'; 
 
 // para usar thme importo varios cosas
-
-// import { themeProvider } from 'styled-components
-import { createTheme, themeProvider, styled } from '@mui/material/styles'
-// import { createTheme } from '@mui/material';
+ import { ThemeProvider } from 'styled-components'; 
+import Header from './components/Header/Header';
 
 
 function App() {
   return (
-    <div >
+    <ThemeProvider theme= { theme }>
       <NavBar />
-    </div>
+      <Header />
+    </ThemeProvider>
   );
 }
 
