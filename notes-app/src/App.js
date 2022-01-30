@@ -2,6 +2,7 @@
 import Header from './components/Header/Header';
 import theme from './theme/theme'; 
 import  GlobalStyle from './theme/global';
+// import Button from './components/Button/Button';
 
 // para usar thme importo varios cosas
  import { ThemeProvider } from 'styled-components'; 
