@@ -1,3 +1,5 @@
+
+// componente ya existente en libreria 
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`

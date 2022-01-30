@@ -1,3 +1,7 @@
+
+// NO LO USO, PORQUE ESTE VA CON LIBRERÍA MUI, USO HEADER.... QUE USO CON STYLES PARA APRENDER BIEN UNA LIBRERIOA A LA VEZ 
+
+
 // éste código viene de search bar de MUI, todo completo 
 import * as React from 'react'; // * sig como 
 

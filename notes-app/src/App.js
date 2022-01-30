@@ -1,18 +1,28 @@
-import NavBar from './components/NavBar/NavBar'; 
+// import NavBar from './components/NavBar/NavBar'; 
+import Header from './components/Header/Header';
 import theme from './theme/theme'; 
+import  GlobalStyle from './theme/global';
 
 // para usar thme importo varios cosas
  import { ThemeProvider } from 'styled-components'; 
-import Header from './components/Header/Header';
 
 
+// siempre dentro de un div 
 function App() {
   return (
+    <div>
+  
+  {/* estilo global de theme, para que no tenga márgenes la pag */}
+    <GlobalStyle /> 
     <ThemeProvider theme= { theme }>
-      <NavBar />
       <Header />
     </ThemeProvider>
+    
+    </div>
   );
 }
 
 export default App;
+
+
+/* <NavBar /> */
