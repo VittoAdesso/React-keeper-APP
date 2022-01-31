@@ -1,5 +1,6 @@
 import styled from 'styled-components'; 
 
+// ME PASO TODO A UNA HOJA DE CSS PARA INTENTAR QUE FUNCIONE CORRECTAMENTE 
 
 // es tipo plantilla
  /* llamo tipo variable como en sass */
