@@ -22,7 +22,7 @@ export const useThemeUpdate = () => {
 
 
 // 1 era fase
-export default function ThemeProvider(children) {
+export default function MyThemeProvider ({children}) {
 
     // AQUÍ SIEMPRE LAS FUNCIONALIDADES 
     const [ darktheme, setDarkTheme] = useState(false);  //trabajo con booleanos, para trabajar como interrupot off on 

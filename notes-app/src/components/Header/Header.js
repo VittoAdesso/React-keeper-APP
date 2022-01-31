@@ -30,7 +30,7 @@ export default function Header() {
 // quito el div para que me envuelva todo 
  // llamo a cada const de styles OJO DE HEADER con el s. y nombre  
  
-    <header style = { themeStyles }>
+    <header >
        <S.Title>Keeper</S.Title>
        <div onClick ={toggleTheme}>
        {/* ternario  */}
