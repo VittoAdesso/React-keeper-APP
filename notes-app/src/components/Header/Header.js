@@ -36,12 +36,12 @@ export default function Header() {
        {/* ternario  */}
 
          { darktheme ? (
-            <NightlightRoundIcon fontSize= 'large' sx={{ color : ' white'}} />
+            <Brightness6Icon fontSize= 'large' sx={{ color : ' white'}} />
         ) : 
         (
               /* sx estilos personalizados  */
-     
-         <Brightness6Icon fontSize= 'large' sx={{ color : ' white'}}/>
+              
+         <NightlightRoundIcon fontSize= 'large' sx={{ color : ' white'}}/>
         )}
     
        </div>
