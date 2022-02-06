@@ -1,3 +1,6 @@
+// agrego ahora estilos boton luna sol
+// los importo de material ui
+
 import styled from 'styled-components'; 
 
 // ME PASO TODO A UNA HOJA DE CSS PARA INTENTAR QUE FUNCIONE CORRECTAMENTE 
@@ -24,8 +27,7 @@ export const Title = styled.h1
     font-weight: 200;
 `;
 
-// agrego ahora estilos boton luna sol
-// los importo de material ui
+
 
 
 

@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Note from '../Note/Note';
-import CreateArea from './components/CreateArea/CreateArea';
+import CreateArea from '../CreateArea/CreateArea';
 
 
 

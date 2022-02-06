@@ -9,8 +9,9 @@ import  GlobalStyle from './theme/global';
  import { ThemeProvider } from 'styled-components'; 
 //  import { MyThemeProvider } from './components/ThemeContext/ThemeContext'; 
 
-  import MyThemeProvider from './components/ThemeContext/ThemeContext.js'
+import NoteContainer from "./components/NoteContainer/NoteContainer";
 
+  import MyThemeProvider from './components/ThemeContext/ThemeContext.js'
 
 // siempre dentro de un div 
 function App() {
@@ -21,10 +22,10 @@ function App() {
     <MyThemeProvider>
         <ThemeProvider theme= { theme }>
           <Header />
-      
+          <NoteContainer />
         </ThemeProvider>
     </MyThemeProvider>
-    
+
     </div>
   );
 }

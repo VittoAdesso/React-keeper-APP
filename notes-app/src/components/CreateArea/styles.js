@@ -24,3 +24,10 @@ export const Formulario = styled.form
 
 `
 ; 
+
+export const IconContainer = styled.div`
+    position: absolute;
+    left: 440px;
+    bottom: -30px;
+    cursor: pointer;
+`;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import * as S from './styles'; así tb puedo importarlo
-import { InputTitle , Formulario } from './styles'; 
+import { InputTitle , Formulario, IconContainer } from './styles'; 
 import { useTheme } from '../ThemeContext/ThemeContext';
 
 // importo de material ui para el boton que agreagaá las notas 
@@ -73,11 +73,13 @@ export default function CreateArea( { addNote } ) {
                 type='text'
                 style={inputStyles}
                 onChange={handleChange} / >
+                <IconContainer>
                 <Fab
                   onClick={handleClick}
                     >
                     <AddIcon />
                 </Fab>
+                </IconContainer>
             </Formulario>
             
     </div>);
