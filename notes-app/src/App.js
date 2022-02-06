@@ -10,7 +10,7 @@ import  GlobalStyle from './theme/global';
 //  import { MyThemeProvider } from './components/ThemeContext/ThemeContext'; 
 
   import MyThemeProvider from './components/ThemeContext/ThemeContext.js'
-import CreateArea from './components/CreateArea/CreateArea';
+
 
 // siempre dentro de un div 
 function App() {
@@ -21,7 +21,7 @@ function App() {
     <MyThemeProvider>
         <ThemeProvider theme= { theme }>
           <Header />
-          <CreateArea />
+      
         </ThemeProvider>
     </MyThemeProvider>
     

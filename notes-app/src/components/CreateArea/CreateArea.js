@@ -3,7 +3,11 @@ import React, { useState } from 'react';
 import { InputTitle , Formulario } from './styles'; 
 import { useTheme } from '../ThemeContext/ThemeContext';
 
-export default function CreateArea() {
+// importo de material ui para el boton que agreagaá las notas 
+import Fab from "@mui/material/Fab"; 
+import AddIcon from "@mui/icons-material/Add"; 
+
+export default function CreateArea( { addNote } ) {
 
     const [ noteText, setNoteText] = useState ({
         titlle: "",
@@ -22,6 +26,19 @@ export default function CreateArea() {
                 [name] : value,
             }))
             ; 
+    }
+
+
+    const handleClick = (event) => {
+
+        event.preventDefault(); // para que no refresque pag
+        addNote(noteText); 
+        // que me agregue nuevamente una nota a su estado original 
+        setNoteText({
+            titlle: "",
+            content: ""
+        }); 
+
     }
 
     const { title, content } = noteText; 
@@ -56,6 +73,11 @@ export default function CreateArea() {
                 type='text'
                 style={inputStyles}
                 onChange={handleChange} / >
+                <Fab
+                  onClick={handleClick}
+                    >
+                    <AddIcon />
+                </Fab>
             </Formulario>
             
     </div>);
